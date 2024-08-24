@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Real-Time Stock Market Data</title>
-  <link rel="stylesheet" href="style.css">
+<title>Real-Time Stock Market Data</title>
+<link rel="stylesheet" href="Stockanalysis.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Real-Time Stock Market Data</h1>
+ <div class="container">
+   <h1>Real-Time Stock Market Data</h1>
 
-    <div id="auth-section">
-      <h2>Login</h2>
-      <input type="text" id="username" placeholder="Username">
-      <input type="password" id="password" placeholder="Password">
-      <button id="login-btn">Login</button>
-      <p>Don't have an account? <a href="#">Sign Up</a></p>
-    </div>
+   <div id="auth-section">
+     <h2>Login</h2>
+     <input type="text" id="username" placeholder="Username">
+     <input type="password" id="password" placeholder="Password">
+     <button id="login-btn">Login</button>
+     <p>Don't have an account? <a href="#">Sign Up</a></p>
+   </div>
 
-    <div id="stock-data-section" style="display: none;">
-      <h2>Stock Data</h2>
-      <input type="text" id="stock-symbol" placeholder="Enter stock symbol">
-      <button id="fetch-data-btn">Fetch Data</button>
+   <div id="stock-data-section" style="display: none;">
+     <h2>Stock Data</h2>
+     <input type="text" id="stock-symbol" placeholder="Enter stock symbol">
+     <button id="fetch-data-btn">Fetch Data</button>
 
-      <div id="stock-info">
-        <p>Symbol: <span id="symbol"></span></p>
-        <p>Price: <span id="price"></span></p>
-        <p>Change: <span id="change"></span></p>
-        <p>Change %: <span id="change-percent"></span></p>
-      </div>
+     <div id="stock-info">
+       <p>Symbol: <span id="symbol"></span></p>
+       <p>Price: <span id="price"></span></p>
+       <p>Change: <span id="change"></span></p>
+       <p>Change %: <span id="change-percent"></span></p>
+     </div>
 
-      <div id="subscription-section">
-        <h3>Subscription</h3>
-        <p>Get real-time updates and predictions!</p>
-        <button id="subscribe-btn">Subscribe</button>
-      </div>
-    </div>
-  </div>
+     <div id="subscription-section">
+       <h3>Subscription</h3>
+       <p>Get real-time updates and predictions!</p>
+       <button id="subscribe-btn">Subscribe</button>
+     </div>
 
-  <script src="script.js"></script>
+     <div id="error-message" style="color: red; display: none;"></div>
+   </div>
+ </div>
+
+ <script src="Stockanalysis.js"></script>
 </body>
 </html>
